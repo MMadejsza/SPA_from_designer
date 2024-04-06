@@ -10,8 +10,10 @@ html {
 	font-size: 10px;
 }
 
-header {
+body header {
 	height: 100vh;
+	max-width: 1920px;
+	margin: 0 auto;
 	position: relative;
 	background-color: #29a6db;
 	overflow: hidden;
@@ -31,6 +33,7 @@ header img {
 }
 
 header .welcome {
+	z-index: 1;
 	top: 10vh;
 	left: 5vw;
 	right: 5vw;
@@ -55,10 +58,11 @@ header .welcome {
 	margin-top: 5vh;
 	padding: 0 1.5rem;
 	background-color: transparent;
+	font-family: 'Saira', sans-serif;
 	font-size: 1.2rem;
 	line-height: 3.2rem;
 	letter-spacing: 1px;
-	font-weight: lighter;
+	font-weight: 200;
 	text-transform: uppercase;
 	color: white;
 	border: 1px solid white;
@@ -69,11 +73,6 @@ section {
 }
 
 @media (orientation: landscape) {
-	header img {
-		height: 80%;
-		bottom: 0;
-		right: -10vw;
-	}
 	header .welcome {
 		top: 20vh;
 		left: 12vw;
@@ -82,13 +81,13 @@ section {
 	.welcome button {
 		margin-top: 4rem;
 	}
+	header img {
+		height: 80%;
+		right: -10vw;
+	}
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
-	header img {
-		bottom: 0;
-		right: -25vw;
-	}
 	header .welcome {
 		top: 10vh;
 		left: 12vw;
@@ -97,7 +96,7 @@ section {
 	.welcome h1 {
 		font-size: 2.4rem;
 	}
-	.welcome h1 {
+	.welcome h2 {
 		font-size: 2.4rem;
 	}
 	.welcome button {
@@ -105,13 +104,16 @@ section {
 		height: 5rem;
 		line-height: 4rem;
 	}
+	header img {
+		right: -25vw;
+	}
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
 	.welcome h1 {
 		font-size: 2.8rem;
 	}
-	.welcome h1 {
+	.welcome h2 {
 		font-size: 2.4rem;
 	}
 	.welcome button {
@@ -121,8 +123,17 @@ section {
 	}
 	header img {
 		height: 80%;
-		bottom: 0;
 		right: -5vw;
+	}
+}
+@media (min-width: 1024px) {
+	.welcome button {
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.welcome button:hover {
+		background-color: #fff;
+		color: #111;
 	}
 }
 @media (orientation: landscape) and (min-width: 1024px) {
@@ -146,8 +157,82 @@ section {
 		line-height: 6rem;
 	}
 	header img {
-		height: 95%;
-		bottom: 0;
+		height: 85%;
 		left: 50%;
+	}
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+	header .welcome {
+		top: 10vh;
+		left: 12vw;
+		right: 12vw;
+	}
+	.welcome p {
+		font-size: 8rem;
+	}
+	.welcome h1 {
+		font-size: 3.2rem;
+	}
+	.welcome h2 {
+		font-size: 3.2rem;
+	}
+	.welcome button {
+		margin-top: 6rem;
+		font-size: 2.4rem;
+		height: 6rem;
+		line-height: 6rem;
+	}
+	header img {
+		left: 50%;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+	header .welcome {
+		left: 6vw;
+		text-align: left;
+	}
+	.welcome p {
+		font-size: 10rem;
+	}
+	.welcome h1 {
+		margin-top: 4rem;
+		font-size: 5rem;
+	}
+	.welcome h2 {
+		font-size: 5rem;
+	}
+	.welcome button {
+		margin-top: 10rem;
+		padding: 0 4rem;
+		font-size: 3rem;
+		height: 8rem;
+		line-height: 8rem;
+		border-width: 3px;
+	}
+	header img {
+		height: 85%;
+		left: 50%;
+	}
+}
+@media (orientation: landscape) and (min-width: 1600px) {
+	.welcome p {
+		font-size: 12rem;
+	}
+	.welcome h1 {
+		margin-top: 4rem;
+		font-size: 6rem;
+	}
+	.welcome h2 {
+		font-size: 6rem;
+	}
+	.welcome button {
+		height: 9rem;
+		line-height: 9rem;
+	}
+	header img {
+		height: 95%;
+		left: 60%;
 	}
 }
