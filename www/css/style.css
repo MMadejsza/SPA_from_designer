@@ -70,6 +70,7 @@ header .welcome {
 
 section {
 	min-height: 100vh;
+	color: black;
 }
 
 @media (orientation: landscape) {
