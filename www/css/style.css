@@ -69,8 +69,38 @@ header .welcome {
 }
 
 section {
-	min-height: 100vh;
+	min-height: 30vh;
 	color: black;
+}
+
+.features {
+	margin-top: 5rem;
+	padding: 5%;
+}
+
+.features img {
+	width: 100%;
+	margin: 3% 0;
+}
+
+.features h1,
+h2 {
+	font-size: 2.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 7%;
+}
+
+.features h2 {
+	font-size: 2.2rem;
+}
+
+.features p {
+	margin: 5% 0;
+	font-family: 'Saria';
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-align: justify;
 }
 
 @media (orientation: landscape) {
