@@ -80,11 +80,12 @@ section {
 
 .features img {
 	width: 100%;
-	margin: 3% 0;
+	margin: 3% auto;
+	max-width: 375px; /* from picture*/
 }
 
 .features h1,
-h2 {
+.features h2 {
 	font-size: 2.6rem;
 	text-align: center;
 	text-transform: uppercase;
@@ -100,7 +101,7 @@ h2 {
 	font-family: 'Saria';
 	font-size: 1.2rem;
 	font-weight: 300;
-	text-align: justify;
+	text-align: center;
 }
 
 @media (orientation: landscape) {
@@ -137,6 +138,15 @@ h2 {
 	}
 	header img {
 		right: -25vw;
+	}
+	.features h1 {
+		font-size: 2.8rem;
+	}
+	.features h2 {
+		font-size: 2.4rem;
+	}
+	.features p {
+		font-size: 1.4rem;
 	}
 }
 
@@ -191,6 +201,30 @@ h2 {
 		height: 85%;
 		left: 50%;
 	}
+	.features {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.features h1 {
+		flex-basis: 100%;
+		font-size: 3.6rem;
+	}
+	.features h2 {
+		height: 88px;
+		font-size: 2.8rem;
+	}
+	.feature:nth-child(3) h2 {
+		line-height: 88px;
+	}
+	.features p {
+		font-size: 1.8rem;
+		line-height: 135%;
+	}
+	.feature {
+		width: 30%;
+	}
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
@@ -217,9 +251,18 @@ h2 {
 	header img {
 		left: 50%;
 	}
+	.features h1 {
+		font-size: 3.6rem;
+	}
+	.features h2 {
+		font-size: 2.8rem;
+	}
+	.features p {
+		font-size: 1.8rem;
+	}
 }
 
-@media (orientation: landscape) and (min-width: 1280px) {
+@media (min-width: 1280px) {
 	header .welcome {
 		left: 6vw;
 		text-align: left;
@@ -247,7 +290,7 @@ h2 {
 		left: 50%;
 	}
 }
-@media (orientation: landscape) and (min-width: 1600px) {
+@media (min-width: 1600px) {
 	.welcome p {
 		font-size: 12rem;
 	}
@@ -265,5 +308,23 @@ h2 {
 	header img {
 		height: 95%;
 		left: 60%;
+	}
+	.features {
+		max-width: 1600px;
+		margin: 50px auto 0;
+	}
+	.features h1 {
+		font-size: 6rem;
+	}
+	.features h2 {
+		font-size: 3.6rem;
+	}
+	.features p {
+		font-size: 2.1rem;
+		line-height: 120%;
+		padding: 0 1rem;
+	}
+	.feature {
+		padding: 2rem 4rem;
 	}
 }
