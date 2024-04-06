@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Saira Condensed', sans-serif;
+	color: white;
+	font-size: 10px;
+}
+
+header {
+	position: relative;
+	background-color: #29a6db;
+	height: 100vh;
+}
+
+header > * {
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header img {
+	height: 50%;
+	bottom: 0;
+	right: 0;
+}
+header .welcome {
+	top: 10vh;
+	left: 5vw;
+	right: 5vw;
+}
+
+header p {
+	font-size: 4rem;
+	letter-spacing: 2px;
+}
+
+.welcome h1 {
+	font-size: 2rem;
+}
+
+.welcome h2 {
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+.welcome button {
+	height: 3.2rem;
+	margin-top: 5vh;
+	padding: 0 1.5rem;
+	background-color: transparent;
+	font-size: 1.2rem;
+	line-height: 3.2rem;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: white;
+	border: 1px solid white;
+}
+
+section {
+	min-height: 100vh;
+}
