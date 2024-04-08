@@ -215,7 +215,7 @@ section {
 		height: 88px;
 		font-size: 2.8rem;
 	}
-	.feature:nth-child(3) h2 {
+	.feature:nth-child(n + 3) h2 {
 		line-height: 88px;
 	}
 	.features p {
@@ -325,6 +325,13 @@ section {
 		padding: 0 1rem;
 	}
 	.feature {
+		min-width: 33%;
 		padding: 2rem 4rem;
+	}
+	.feature:nth-child(n + 3) h2 {
+		line-height: normal;
+	}
+	.feature:nth-child(3) h2 {
+		line-height: 88px;
 	}
 }
