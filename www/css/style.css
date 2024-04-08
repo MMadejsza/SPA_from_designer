@@ -215,7 +215,7 @@ section {
 		height: 88px;
 		font-size: 2.8rem;
 	}
-	.feature:nth-child(n + 3) h2 {
+	.feature:nth-child(3) h2 {
 		line-height: 88px;
 	}
 	.features p {
@@ -224,6 +224,11 @@ section {
 	}
 	.feature {
 		width: 30%;
+	}
+}
+@media (orientation: portrait) and (min-width: 1304px) {
+	.feature:nth-child(n + 3) h2 {
+		line-height: 88px;
 	}
 }
 
