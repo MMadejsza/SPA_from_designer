@@ -104,6 +104,54 @@ section {
 	text-align: center;
 }
 
+.portfolio {
+	padding: 1rem 0 3rem;
+	background-color: black;
+	font-family: 'Saira';
+	color: white;
+}
+
+.portfolio h1 {
+	padding: 1rem 2rem;
+	text-align: center;
+	font-size: 2.8rem;
+	font-family: 'Saira Condensed';
+}
+
+.portfolio .web img {
+	width: 100%;
+}
+
+.portfolio .about {
+	width: 100%;
+	padding: 1rem 2rem 2rem 0;
+	text-align: left;
+}
+
+.portfolio .about h2 {
+	font-size: 1.8rem;
+	border-bottom: 2px solid white;
+	margin-bottom: 1.2rem;
+	padding-bottom: 0.6rem;
+	text-indent: 2rem;
+}
+
+.portfolio .about p {
+	font-size: 1.2rem;
+	padding-left: 2rem;
+}
+
+.portfolio .project {
+	margin-bottom: 2rem;
+}
+
+.portfolio .project:nth-last-of-type(odd) .about {
+	background-color: #ff4e2f;
+}
+.portfolio .project:nth-last-of-type(even) .about {
+	background-color: #0370bb;
+}
+
 @media (orientation: landscape) {
 	header .welcome {
 		top: 20vh;
