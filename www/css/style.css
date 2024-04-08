@@ -79,6 +79,7 @@ section {
 }
 
 .features img {
+	display: block;
 	width: 100%;
 	margin: 3% auto;
 	max-width: 375px; /* from picture*/
@@ -105,7 +106,7 @@ section {
 }
 
 .portfolio {
-	padding: 1rem 0 3rem;
+	padding-bottom: 3rem;
 	background-color: black;
 	font-family: 'Saira';
 	color: white;
@@ -142,14 +143,85 @@ section {
 }
 
 .portfolio .project {
-	margin-bottom: 2rem;
+	max-width: 1600px;
+	margin: 0 auto 2rem;
 }
 
 .portfolio .project:nth-last-of-type(odd) .about {
 	background-color: #ff4e2f;
 }
+
 .portfolio .project:nth-last-of-type(even) .about {
 	background-color: #0370bb;
+}
+
+@media (orientation: landscape) and (min-width: 534px) {
+	.portfolio .project:nth-last-of-type(odd) .about {
+		padding-left: 2rem;
+		padding-right: 0;
+	}
+
+	.portfolio .about h2 {
+		text-indent: 2rem;
+		padding-right: 2rem;
+	}
+
+	.portfolio .about p {
+		padding: 0 2rem;
+	}
+	.portfolio .project {
+		display: flex;
+	}
+	.portfolio .project:nth-of-type(even) .about {
+		order: 1;
+		text-align: right;
+	}
+	.portfolio .project:nth-of-type(even) .web {
+		order: 2;
+	}
+	/* graphics is inline block so there is an extra stripe below */
+	.project .web img {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.portfolio h1 {
+		font-size: 4rem;
+	}
+
+	.portfolio .about h2 {
+		font-size: 2.8rem;
+		text-indent: 4rem;
+		padding-right: 4rem;
+	}
+
+	.portfolio .about p {
+		font-size: 1.8rem;
+		padding: 0 4rem;
+	}
+	.portfolio .project {
+		margin-bottom: 4rem;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+	.portfolio h1 {
+		font-size: 6rem;
+		padding: 3rem 0;
+	}
+
+	.portfolio .about h2 {
+		padding-top: 5rem;
+		margin-bottom: 5rem;
+	}
+
+	.portfolio .about p {
+		line-height: 180%;
+	}
+	.portfolio .project {
+		margin-bottom: 4rem;
+	}
 }
 
 @media (orientation: landscape) {
