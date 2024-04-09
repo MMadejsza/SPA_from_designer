@@ -30,6 +30,15 @@ textarea {
 	font-weight: normal;
 }
 
+button {
+	line-height: 3.2rem;
+	font-family: 'Saira', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: white;
+	border: 1px solid white;
+}
+
 header {
 	height: 100vh;
 	max-width: 1920px;
@@ -74,18 +83,8 @@ header .welcome {
 }
 
 .welcome button {
-	height: 3.2rem;
-	margin-top: 1vh;
-	/* padding: 0 1.5rem; */
 	background-color: transparent;
-	font-family: 'Saira', sans-serif;
-	font-size: 1.2rem;
-	/* line-height: 3.2rem; */
-	letter-spacing: 1px;
 	font-weight: 200;
-	text-transform: uppercase;
-	color: white;
-	border: 1px solid white;
 }
 
 .features {
@@ -117,7 +116,7 @@ header .welcome {
 		right: 45vw;
 	}
 	.welcome button {
-		margin-top: 4rem;
+		margin-top: 5vh;
 	}
 	header img {
 		height: 80%;
@@ -126,53 +125,29 @@ header .welcome {
 }
 
 @media (orientation: portrait) and (min-width: 360px) {
+	html {
+		font-size: 12px;
+	}
 	header .welcome {
 		top: 10vh;
 		left: 12vw;
 		right: 12vw;
 	}
-	.welcome h1 {
-		font-size: 2.4rem;
-	}
-	.welcome h2 {
-		font-size: 2.4rem;
-	}
-	.welcome button {
-		font-size: 1.6rem;
-		height: 5rem;
-		line-height: 4rem;
-	}
 	header img {
 		right: -25vw;
-	}
-	.features h1 {
-		font-size: 2.8rem;
-	}
-	.features h2 {
-		font-size: 2.4rem;
-	}
-	.features p {
-		font-size: 1.4rem;
 	}
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
-	.welcome h1 {
-		font-size: 2.8rem;
-	}
-	.welcome h2 {
-		font-size: 2.4rem;
-	}
-	.welcome button {
-		font-size: 1.6rem;
-		height: 4rem;
-		line-height: 4rem;
+	html {
+		font-size: 12px;
 	}
 	header img {
 		height: 80%;
 		right: -5vw;
 	}
 }
+
 @media (min-width: 1024px) {
 	.welcome button {
 		cursor: pointer;
@@ -183,25 +158,16 @@ header .welcome {
 		color: #111;
 	}
 }
+
 @media (orientation: landscape) and (min-width: 1024px) {
+	html {
+		font-size: 15px;
+	}
 	header .welcome {
 		left: 3vw;
 	}
-	.welcome p {
-		font-size: 5.6rem;
-	}
-	.welcome h1 {
-		margin-top: 4rem;
-		font-size: 3.4rem;
-	}
-	.welcome h2 {
-		font-size: 3.4rem;
-	}
 	.welcome button {
-		margin-top: 8rem;
-		font-size: 2.4rem;
-		height: 6rem;
-		line-height: 6rem;
+		font-size: 1.8rem;
 	}
 	header img {
 		height: 85%;
@@ -215,17 +181,14 @@ header .welcome {
 	}
 	.features h1 {
 		flex-basis: 100%;
-		font-size: 3.6rem;
 	}
 	.features h2 {
 		height: 88px;
-		font-size: 2.8rem;
 	}
 	.feature:nth-child(3) h2 {
 		line-height: 88px;
 	}
 	.features p {
-		font-size: 1.8rem;
 		line-height: 135%;
 	}
 	.feature {
@@ -239,37 +202,28 @@ header .welcome {
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
+	html {
+		font-size: 15px;
+	}
 	header .welcome {
 		top: 10vh;
 		left: 12vw;
 		right: 12vw;
 	}
 	.welcome p {
-		font-size: 8rem;
+		font-size: 5.3rem;
 	}
-	.welcome h1 {
-		font-size: 3.2rem;
-	}
+	.welcome h1,
 	.welcome h2 {
-		font-size: 3.2rem;
+		font-size: 2.1rem;
 	}
 	.welcome button {
-		margin-top: 6rem;
-		font-size: 2.4rem;
-		height: 6rem;
-		line-height: 6rem;
+		margin-top: 4rem;
+		font-size: 1.2rem;
+		line-height: 4rem;
 	}
 	header img {
 		left: 50%;
-	}
-	.features h1 {
-		font-size: 3.6rem;
-	}
-	.features h2 {
-		font-size: 2.8rem;
-	}
-	.features p {
-		font-size: 1.8rem;
 	}
 }
 
@@ -279,21 +233,22 @@ header .welcome {
 		text-align: left;
 	}
 	.welcome p {
-		font-size: 10rem;
+		padding-left: 0;
+		font-size: 6.5rem;
 	}
 	.welcome h1 {
-		margin-top: 4rem;
-		font-size: 5rem;
+		margin-top: 2.5rem;
+		padding-left: 0;
+		font-size: 3.2rem;
 	}
 	.welcome h2 {
-		font-size: 5rem;
+		font-size: 3.2rem;
 	}
 	.welcome button {
-		margin-top: 10rem;
+		margin-top: 6.5rem;
 		padding: 0 4rem;
-		font-size: 3rem;
-		height: 8rem;
-		line-height: 8rem;
+		font-size: 2rem;
+		line-height: 5rem;
 		border-width: 3px;
 	}
 	header img {
@@ -301,6 +256,7 @@ header .welcome {
 		left: 50%;
 	}
 }
+
 @media (min-width: 1600px) {
 	.welcome p {
 		font-size: 12rem;
