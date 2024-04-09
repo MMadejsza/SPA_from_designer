@@ -89,7 +89,6 @@ header .welcome {
 }
 
 .features {
-	/* margin-top: 5rem; */
 	padding: 5%;
 	color: black;
 }
@@ -103,19 +102,11 @@ header .welcome {
 
 .features h1,
 .features h2 {
-	/* font-size: 2.6rem; */
 	text-transform: uppercase;
-	/* margin-bottom: 7%; */
-}
-
-.features h2 {
-	/* font-size: 2.2rem; */
 }
 
 .features p {
-	/* margin: 5% 0; */
 	font-family: 'Saria';
-	/* font-size: 1.2rem; */
 	font-weight: 300;
 }
 
@@ -363,12 +354,6 @@ header .welcome {
 	color: white;
 }
 
-.portfolio h1 {
-	/* padding: 1rem 2rem; */
-	/* font-size: 2.8rem; */
-	font-family: 'Saira Condensed';
-}
-
 .portfolio .web img {
 	width: 100%;
 }
@@ -380,21 +365,18 @@ header .welcome {
 }
 
 .portfolio .about h2 {
-	/* font-size: 1.8rem; */
 	border-bottom: 2px solid white;
-	/* margin-bottom: 1.2rem; */
-	/* padding-bottom: 0.6rem; */
 	text-indent: 2rem;
 }
 
 .portfolio .about p {
-	/* font-size: 1.2rem; */
 	text-align: left;
-	/* padding-left: 2rem; */
 }
 
-.portfolio .project:not(:last-child) {
+.portfolio .project {
 	max-width: 1600px;
+}
+.portfolio .project:not(:last-child) {
 	margin: 0 auto 2rem;
 }
 
@@ -562,9 +544,7 @@ header .welcome {
 }
 
 .hobby .item p {
-	/* padding: 0.5rem 0; */
 	font-size: 1.8rem;
-	/* line-height: 25vh; */
 	text-shadow: 0 0 4px black;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -572,7 +552,6 @@ header .welcome {
 .hobby h1 {
 	color: black;
 	padding: 3rem 2rem;
-	/* font-size: 3.6rem;  */
 }
 
 @media (min-width: 533px) {
@@ -640,14 +619,6 @@ header .welcome {
 	padding-top: 2rem;
 }
 
-.contact h1,
-.contact button {
-	font-family: 'Saira Condensed';
-	/* font-size: 2.6rem; */
-	text-transform: uppercase;
-	/* margin-bottom: 1.5rem; */
-}
-
 .contact,
 .contact input,
 .contact button,
@@ -655,13 +626,16 @@ header .welcome {
 	font-family: 'Saira', sans-serif;
 }
 
+.contact h1,
+.contact button {
+	text-transform: uppercase;
+}
+
 .contact input,
 .contact button,
 .contact textarea {
 	width: 100%;
 	margin-bottom: 2rem;
-	/* font-size: 1.2rem; */
-	/* padding: 0.5rem; */
 }
 
 .contact input {
@@ -692,17 +666,13 @@ header .welcome {
 	font-size: 2.5rem;
 }
 .contact .social span {
-	/* line-height: 7.2rem; */
 	line-height: 3.6rem;
 	padding-left: 2rem;
 }
 .whatsapp {
 	height: 3.6rem;
 	width: 3.6rem;
-	/* height: 7.2rem;
-	width: 7.2rem; */
 	border-radius: 50%;
-	/* line-height: 7.2rem; */
 	line-height: 3rem;
 	padding-left: 0.2rem;
 	font-size: 4rem;
