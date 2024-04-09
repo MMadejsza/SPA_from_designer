@@ -68,10 +68,6 @@ header .welcome {
 	border: 1px solid white;
 }
 
-footer {
-	min-height: 80vh;
-}
-
 .features {
 	margin-top: 5rem;
 	padding: 5%;
@@ -442,6 +438,14 @@ footer {
 	line-height: 7.2rem;
 	font-size: 4rem;
 	background: linear-gradient(45deg, #1ebea5 10%, #00e676);
+}
+
+footer {
+	padding: 2rem;
+	font-family: 'Saira', sans-serif;
+	font-size: 2rem;
+	color: white;
+	background-color: #29a6dc;
 }
 
 @media (min-width: 533px) {
