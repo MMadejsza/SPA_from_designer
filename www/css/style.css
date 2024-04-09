@@ -378,6 +378,14 @@ footer {
 	}
 }
 
+.contact {
+	background-color: #000;
+}
+.contact h1 {
+	font-size: 2.6rem;
+    text
+}
+
 @media (orientation: landscape) {
 	header .welcome {
 		top: 20vh;
