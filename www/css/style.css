@@ -380,12 +380,70 @@ footer {
 
 .contact {
 	background-color: #000;
+	padding: 3rem 2rem;
+	font-size: 1.4rem;
 }
-.contact h1 {
-	font-size: 2.6rem;
-    text
+.contact .wrap {
+	padding-top: 2rem;
 }
 
+.contact h1,
+.contact button {
+	font-family: 'Saira Condensed';
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+
+.contact,
+.contact input,
+.contact button,
+.contact textarea {
+	font-family: 'Saira', sans-serif;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+	width: 100%;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+}
+
+.contact input {
+	height: 3.6rem;
+}
+
+.contact button {
+	font-size: 1.4rem;
+	line-height: 4rem;
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+}
+
+.contact .socials {
+	padding-top: 3rem;
+}
+.contact .social {
+	padding: 1rem 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.contact .social span {
+	line-height: 7.2rem;
+	padding-left: 2rem;
+}
+.whatsapp {
+	height: 7.2rem;
+	width: 7.2rem;
+	border-radius: 50%;
+	line-height: 7.2rem;
+	font-size: 4rem;
+	background: linear-gradient(45deg, #1ebea5 10%, #00e676);
+}
 @media (orientation: landscape) {
 	header .welcome {
 		top: 20vh;
