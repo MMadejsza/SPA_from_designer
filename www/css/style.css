@@ -10,12 +10,24 @@ html {
 	font-size: 10px;
 	text-align: center;
 }
+
 h1 {
 	padding: 1rem 2rem;
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 }
+
 h2 {
-	font-size: 2.2rem;
+	font-size: 1.8rem;
+	padding-bottom: 1rem;
+}
+
+p,
+input,
+button,
+textarea {
+	padding: 0.5rem 2rem;
+	font-size: 1.2rem;
+	font-weight: normal;
 }
 
 header {
@@ -51,23 +63,24 @@ header .welcome {
 	letter-spacing: 2px;
 }
 
-/* .welcome h1 {
+.welcome h1 {
 	font-size: 2rem;
-} */
+	padding-bottom: 0;
+}
 
 .welcome h2 {
-	/* font-size: 2rem; */
+	font-size: 2rem;
 	font-weight: normal;
 }
 
 .welcome button {
 	height: 3.2rem;
-	margin-top: 3vh;
-	padding: 0 1.5rem;
+	margin-top: 1vh;
+	/* padding: 0 1.5rem; */
 	background-color: transparent;
 	font-family: 'Saira', sans-serif;
 	font-size: 1.2rem;
-	line-height: 3.2rem;
+	/* line-height: 3.2rem; */
 	letter-spacing: 1px;
 	font-weight: 200;
 	text-transform: uppercase;
@@ -100,9 +113,9 @@ header .welcome {
 }
 
 .features p {
-	margin: 5% 0;
+	/* margin: 5% 0; */
 	font-family: 'Saria';
-	font-size: 1.2rem;
+	/* font-size: 1.2rem; */
 	font-weight: 300;
 }
 
@@ -360,23 +373,24 @@ header .welcome {
 	width: 100%;
 }
 
-.portfolio .about:not(:last-child) {
+.portfolio .about {
 	width: 100%;
-	padding: 1rem 2rem 2rem 0;
+	padding: 2rem 2rem 2rem 0;
 	text-align: left;
 }
 
 .portfolio .about h2 {
-	font-size: 1.8rem;
+	/* font-size: 1.8rem; */
 	border-bottom: 2px solid white;
-	margin-bottom: 1.2rem;
-	padding-bottom: 0.6rem;
+	/* margin-bottom: 1.2rem; */
+	/* padding-bottom: 0.6rem; */
 	text-indent: 2rem;
 }
 
 .portfolio .about p {
-	font-size: 1.2rem;
-	padding-left: 2rem;
+	/* font-size: 1.2rem; */
+	text-align: left;
+	/* padding-left: 2rem; */
 }
 
 .portfolio .project:not(:last-child) {
@@ -548,7 +562,7 @@ header .welcome {
 }
 
 .hobby .item p {
-	padding: 0.5rem 0;
+	/* padding: 0.5rem 0; */
 	font-size: 1.8rem;
 	/* line-height: 25vh; */
 	text-shadow: 0 0 4px black;
@@ -646,8 +660,8 @@ header .welcome {
 .contact textarea {
 	width: 100%;
 	margin-bottom: 2rem;
-	font-size: 1.2rem;
-	padding: 0.5rem;
+	/* font-size: 1.2rem; */
+	/* padding: 0.5rem; */
 }
 
 .contact input {
