@@ -470,9 +470,9 @@ header .welcome {
 }
 
 .personality h1 {
+	margin-bottom: 2.5rem;
 	font-size: 2.6rem;
 	text-transform: uppercase;
-	margin-bottom: 2.5rem;
 }
 
 .personality p {
