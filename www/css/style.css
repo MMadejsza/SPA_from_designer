@@ -538,8 +538,8 @@ header .welcome {
 	height: 3.6rem;
 	width: 3.6rem;
 	border-radius: 50%;
-	line-height: 3rem;
-	padding-left: 0.2rem;
+	line-height: 2.8rem;
+	padding-left: 0.1rem;
 	font-size: 4rem;
 	background: linear-gradient(45deg, #1ebea5 10%, #00e676);
 }
