@@ -126,8 +126,10 @@ header .welcome {
 	font-weight: 200;
 }
 
-.featuresBcg {
-	background-color: var(--portfolioBcgColor);
+@media (max-width: 1600px) {
+	.featuresBcg {
+		background-color: var(--portfolioBcgColor);
+	}
 }
 
 .features {
