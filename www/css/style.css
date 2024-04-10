@@ -2,7 +2,11 @@
 	--bottomRadius: 15px;
 	--headerBcgColor: #29a6db;
 	--featuresBcgColor: white;
-	--projectsBcgColor: black;
+	--portfolioBcgColor: black;
+	--projectEvenBcgColor: #ff4e2f;
+	--projectOddBcgColor: #0370bb;
+	--hobbyBcgColor: white;
+	--contactBcgColor: black;
 }
 
 * {
@@ -123,7 +127,7 @@ header .welcome {
 }
 
 .featuresBcg {
-	background-color: var(--projectsBcgColor);
+	background-color: var(--portfolioBcgColor);
 }
 
 .features {
@@ -194,7 +198,7 @@ header .welcome {
 		transition: 0.3s;
 	}
 	.welcome button:hover {
-		background-color: #fff;
+		background-color: var(--featuresBcgColor);
 		color: #111;
 	}
 }
@@ -311,7 +315,7 @@ header .welcome {
 
 .portfolio {
 	padding-bottom: 2rem;
-	background-color: black;
+	background-color: var(--portfolioBcgColor);
 	font-family: 'Saira';
 	color: white;
 }
@@ -344,11 +348,11 @@ header .welcome {
 }
 
 .portfolio .project:nth-last-of-type(odd) .about {
-	background-color: #ff4e2f;
+	background-color: var(--projectEvenBcgColor);
 }
 
 .portfolio .project:nth-last-of-type(even) .about {
-	background-color: #0370bb;
+	background-color: var(--projectOddBcgColor);
 }
 
 @media (orientation: landscape) and (min-width: 534px) {
@@ -393,7 +397,7 @@ header .welcome {
 	}
 }
 .personalityBcg {
-	background-color: var(--featuresBcgColor);
+	background-color: var(--hobbyBcgColor);
 }
 
 .personality {
@@ -436,12 +440,12 @@ header .welcome {
 	}
 }
 .hobbyBcg {
-	background-color: black;
+	background-color: var(--contactBcgColor);
 }
 .hobby {
 	max-width: 1920px;
 	margin: 0 auto;
-	background-color: var(--featuresBcgColor);
+	background-color: var(--hobbyBcgColor);
 }
 
 .hobby .item {
@@ -476,7 +480,6 @@ header .welcome {
 
 .hobby h1 {
 	color: black;
-	background-color: white;
 }
 
 @media (min-width: 533px) {
@@ -520,11 +523,11 @@ header .welcome {
 	}
 }
 .contactBcg {
-	background-color: #29a6db;
+	background-color: var(--headerBcgColor);
 }
 
 .contact {
-	background-color: #000;
+	background-color: var(--contactBcgColor);
 	padding: 3rem 2rem;
 	font-size: 1.4rem;
 }
@@ -561,7 +564,7 @@ header .welcome {
 	font-size: 1.4rem;
 	line-height: 4rem;
 	color: white;
-	background-color: black;
+	background-color: transparent;
 	border: 2px solid white;
 }
 
@@ -600,7 +603,7 @@ footer {
 	font-family: 'Saira', sans-serif;
 	font-size: 1.4rem;
 	color: white;
-	background-color: #29a6dc;
+	background-color: var(--headerBcgColor);
 }
 
 @media (min-width: 533px) {
@@ -649,7 +652,7 @@ footer {
 	}
 	.contact button:hover {
 		color: black;
-		background-color: white;
+		background-color: var(--hobbyBcgColor);
 	}
 
 	.contact .socials {
