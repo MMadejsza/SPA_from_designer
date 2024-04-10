@@ -182,9 +182,6 @@ header .welcome {
 	.features h1 {
 		flex-basis: 100%;
 	}
-	.features h2 {
-		height: 88px;
-	}
 	.feature:nth-child(3) h2 {
 		line-height: 88px;
 	}
@@ -268,7 +265,7 @@ header .welcome {
 	}
 	.feature {
 		min-width: 33%;
-		line-height: 88px;
+		/* line-height: 88px; */
 	}
 }
 
