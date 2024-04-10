@@ -1,3 +1,7 @@
+:root {
+	--bottomRadius: 15px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -28,6 +32,30 @@ textarea {
 	padding: 0.5rem 2rem;
 	font-size: 1.2rem;
 	font-weight: normal;
+}
+
+header,
+.project,
+.hobby,
+.contact {
+	overflow: hidden;
+	border-bottom-left-radius: var(--bottomRadius);
+	border-bottom-right-radius: var(--bottomRadius);
+}
+
+.hobby .item:nth-of-type(3) {
+	border-bottom-left-radius: var(--bottomRadius);
+}
+.hobby .item:nth-of-type(4) {
+	border-bottom-right-radius: var(--bottomRadius);
+}
+
+input,
+button,
+textarea,
+.hobby .item {
+	border-radius: var(--bottomRadius);
+	margin: 5px;
 }
 
 button {
@@ -392,10 +420,13 @@ header .welcome {
 		padding: 5rem 2rem;
 	}
 }
-
+.hobbyBcg {
+	background-color: black;
+}
 .hobby {
 	max-width: 1920px;
 	margin: 0 auto;
+	/* background-color: black; */
 }
 
 .hobby .item {
@@ -403,6 +434,7 @@ header .welcome {
 	font-family: 'Saira';
 	background-position: center;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 .hobby .item:nth-of-type(1) {
@@ -429,18 +461,21 @@ header .welcome {
 
 .hobby h1 {
 	color: black;
+	background-color: white;
 }
 
 @media (min-width: 533px) {
 	.hobby {
 		display: flex;
 		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
 	}
 	.hobby h1 {
 		flex-basis: 100%;
 	}
 	.hobby .item {
-		flex-basis: 50%;
+		flex-basis: 48%;
 		min-height: 40vh;
 	}
 }
@@ -469,7 +504,9 @@ header .welcome {
 		opacity: 1;
 	}
 }
-
+.contactBcg {
+	background-color: #29a6db;
+}
 .contact {
 	background-color: #000;
 	padding: 3rem 2rem;
