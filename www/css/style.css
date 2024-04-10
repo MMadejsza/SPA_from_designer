@@ -7,6 +7,9 @@
 	--projectOddBcgColor: #0370bb;
 	--hobbyBcgColor: white;
 	--contactBcgColor: black;
+	--activeBoxShadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	--activeBoxShadowDark: rgba(255, 255, 255, 0.3) 0px 19px 38px,
+		rgba(255, 252, 252, 0.22) 0px 15px 12px;
 }
 
 * {
@@ -63,8 +66,15 @@ input,
 button,
 textarea,
 .hobby .item {
-	border-radius: var(--bottomRadius);
 	margin: 5px;
+	border-radius: var(--bottomRadius);
+	outline: none;
+}
+
+button:hover,
+input:focus,
+textarea:focus {
+	box-shadow: var(--activeBoxShadowDark);
 }
 
 button {
@@ -75,9 +85,11 @@ button {
 	color: white;
 	border: 1px solid white;
 }
+
 .headerBcg {
 	background-color: var(--featuresBcgColor);
 }
+
 header {
 	height: 100vh;
 	max-width: 1920px;
@@ -124,6 +136,9 @@ header .welcome {
 .welcome button {
 	background-color: transparent;
 	font-weight: 200;
+}
+.welcome button:hover {
+	box-shadow: var(--activeBoxShadow);
 }
 
 @media (max-width: 1600px) {
@@ -574,22 +589,28 @@ header .welcome {
 	margin: 0 auto;
 	padding-top: 2rem;
 }
+
 .contact .social {
+	position: relative;
 	padding: 1rem 0;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
+
 .contact .social img {
 	width: 3.6rem;
 }
+
 .contact .social i {
 	font-size: 2.5rem;
 }
+
 .contact .social span {
 	line-height: 3.6rem;
 	padding-left: 2rem;
 }
+
 .whatsapp {
 	height: 3.6rem;
 	width: 3.6rem;
