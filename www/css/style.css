@@ -300,6 +300,7 @@ header .welcome {
 
 .portfolio .project {
 	max-width: 1600px;
+	margin: 0 auto;
 }
 .portfolio .project:not(:last-child) {
 	margin: 0 auto 2rem;
