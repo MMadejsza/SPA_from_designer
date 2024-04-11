@@ -587,18 +587,7 @@ header .welcome {
 .contact a {
 	text-decoration: none;
 	color: white;
-	background: linear-gradient(to right, var(--headerBcgColor), var(--headerBcgColor)),
-		linear-gradient(to right, var(--projectEvenBcgColor), black);
-	background-size: 100% 3px, 0 3px;
-	background-position: 100% 100%, 0 100%;
-	background-repeat: no-repeat;
-	transition: background-size 400ms;
 }
-
-.contact a:hover:not(:nth-of-type(2)) {
-	background-size: 0 3px, 100% 3px;
-}
-
 .contact .socials {
 	margin: 0 auto;
 	padding-top: 2rem;
@@ -645,13 +634,25 @@ footer {
 
 @media (min-width: 533px) {
 	.contact .socials {
-		width: 55%;
+		width: 25rem;
 		display: flex;
 		flex-flow: column wrap;
 		align-items: flex-start;
 	}
 }
 @media (min-width: 1024px) {
+	.contact a {
+		background: linear-gradient(to right, var(--headerBcgColor), var(--headerBcgColor)),
+			linear-gradient(to right, var(--projectEvenBcgColor), black);
+		background-size: 100% 3px, 0 3px;
+		background-position: 100% 100%, 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size 400ms;
+	}
+
+	.contact a:hover:not(:nth-of-type(2)) {
+		background-size: 0 3px, 100% 3px;
+	}
 	.contact .wrap {
 		display: flex;
 		flex-flow: row wrap;
