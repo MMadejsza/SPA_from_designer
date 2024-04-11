@@ -468,25 +468,31 @@ header .welcome {
 .hobby .item {
 	min-height: 25vh;
 	font-family: 'Saira';
-	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 100%;
 	overflow: hidden;
 }
 
 .hobby .item:nth-of-type(1) {
 	background-image: url(../images/hobby1.jpg);
+
+	background-position: center;
 }
 
 .hobby .item:nth-of-type(2) {
 	background-image: url(../images/hobby2.jpg);
+	background-position: 45%;
+	background-position: top;
 }
 
 .hobby .item:nth-of-type(3) {
 	background-image: url(../images/hobby3.jpg);
+	background-position: center;
 }
 
 .hobby .item:nth-of-type(4) {
 	background-image: url(../images/hobby4.jpg);
+	background-position: 80% top;
 }
 
 .hobby .item p {
