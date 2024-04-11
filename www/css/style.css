@@ -591,6 +591,7 @@ header .welcome {
 	border: 2px solid white;
 }
 .contact a {
+	width: 25rem;
 	text-decoration: none;
 	color: white;
 }
@@ -649,11 +650,12 @@ footer {
 @media (min-width: 1024px) {
 	.contact a {
 		background: linear-gradient(to right, var(--headerBcgColor), var(--headerBcgColor)),
-			linear-gradient(to right, var(--projectEvenBcgColor), black);
+			linear-gradient(to right, black, var(--projectEvenBcgColor));
 		background-size: 100% 3px, 0 3px;
 		background-position: 100% 100%, 0 100%;
 		background-repeat: no-repeat;
 		transition: background-size 400ms;
+		border-radius: 4%;
 	}
 
 	.contact a:hover:not(:nth-of-type(2)) {
